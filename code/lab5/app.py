@@ -70,6 +70,9 @@ def get_cosmosdb_mongodb_connection_string():
 
     connection_string = f'mongodb+srv://{username}:{encoded_password}@{host}/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
 
+    # in case of problems with SSL certificates, you might want to try with 'tlsAllowInvalidCertificates=True'
+    # connection_string = f'mongodb+srv://{username}:{encoded_password}@{host}/?tls=true&tlsAllowInvalidCertificates=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
+
     return connection_string
 
 def calculate_embeddings(query):
