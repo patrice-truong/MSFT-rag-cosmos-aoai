@@ -1,0 +1,13 @@
+python-dotenv
+tenacity
+ipykernel
+matplotlib
+plotly
+scikit-learn
+openai
+azure-cosmos
+streamlit
+langchain
+tiktoken
+langchain_openai
+unstructured

@@ -1,0 +1,17 @@
+python-dotenv
+tenacity==8.2.3
+ipykernel
+matplotlib
+plotly
+scikit-learn
+pymongo==3.11.3
+dnspython
+openai==1.7.1
+azure-cosmos
+streamlit
+langchain==0.0.352
+pymongo
+tiktoken
+langchain_openai==0.0.2
+azure-search-documents==11.4.0
+azure-identity

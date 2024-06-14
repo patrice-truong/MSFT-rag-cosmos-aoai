@@ -28,6 +28,9 @@ Tags/
 .venv
 venv
 site-packages
+venv.ps1
+
+run.cmd
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -318,3 +321,4 @@ __pycache__/
 # End of https://www.gitignore.io/api/visualstudio
 TestsWeb/debug.log
 .aider*
+
