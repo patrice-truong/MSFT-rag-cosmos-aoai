@@ -77,7 +77,7 @@ def get_similar_docs(openai_client, container, query_text, limit=5):
     # find product keys of products that match the question
     query = f"""
         SELECT TOP {limit} 
-            VALUE c.productKey
+            VALUE c.productId
         FROM c 
         WHERE c.type = 'vector'
         ORDER BY VectorDistance(c.embedding, {query_vector})
@@ -96,7 +96,7 @@ def get_similar_docs(openai_client, container, query_text, limit=5):
     id_list_str = ', '.join([f"'{id}'" for id in id_list])
     query = f"""
         SELECT * FROM c 
-        WHERE c.type = 'product' AND c.id IN ({id_list_str})
+        WHERE c.type = 'product' AND c.productId IN ({id_list_str})
     """
     results = container.query_items(
         query=query,
