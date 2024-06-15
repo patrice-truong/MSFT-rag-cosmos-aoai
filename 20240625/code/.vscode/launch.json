@@ -1,0 +1,20 @@
+{
+    //
+    // DEBUG STREAMLIT APPLICATION
+    //
+    
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Debug Streamlit application (lab4)",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}\\.venv\\Scripts\\streamlit.exe",
+        "args": [
+            "run",
+            "lab4/app.py",
+            "--server.port",
+            "8501"
+        ],
+        "justMyCode": true
+    }]
+}
